@@ -6,7 +6,7 @@
     <div class="column is-one-third is-offset-one-third m-t-100">
         <div class="card">
             <div class="card-content">
-                <h1 class="title has-text-centered">Register</h1>
+                <h1 class="title has-text-centered">Join us</h1>
                 <form role="form" action="{{route('register')}}" method="post">
                     {{csrf_field()}}
                     <div class="field">
@@ -47,10 +47,13 @@
                         @endif
                     </div>
 
-                    <button type="submit" class="button is-primary is-outlined is-fullwidth m-t-30">Log In</button>
+                    <button type="submit" class="button is-primary is-outlined is-fullwidth m-t-30">Register</button>
                 </form>
             </div>
         </div>
+
+        <h5 class="has-text-centered m-t-20"><a href="{{route('login')}}" class="is-muted">Already have an account?</a></h5>
+
     </div>
 </div>
 <!-- <div class="container">

@@ -1,11 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="columns">
-    <div class="column is-one-third is-offset-one-third m-t-100">
-        <div class="card">
-            welcome
-        </div>
-    </div>
-</div>
+<section class="hero is-primary is-medium m-t-5">
+    dsf
+</section>
 @endsection

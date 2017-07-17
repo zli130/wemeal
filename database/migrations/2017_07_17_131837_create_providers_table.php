@@ -18,12 +18,12 @@ class CreateProvidersTable extends Migration
             $table->string('name');
             $table->text('description');
             $table->integer('user_id');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->tinyInteger('active')->default(1);
             $table->string('owner');
             $table->string('address');
             $table->string('phone');
-            $table->integer('weekday');
+            $table->integer('weekday')->nullable();
             $table->timestamps();
         });
     }

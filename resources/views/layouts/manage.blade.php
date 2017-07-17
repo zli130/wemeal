@@ -9,6 +9,7 @@
     <title>WeMeal | Management</title>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHI60uqfLC_FOAEHLUqkAq8ikxUHiJdZ0&libraries=places"></script>
 </head>
 <body>
 

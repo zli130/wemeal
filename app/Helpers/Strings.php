@@ -18,4 +18,9 @@ class Strings
 
         return $str;
     }
+
+    public static function generateFileName($file)
+    {
+         return str_random(32).'.'.$file->extension();
+    }
 }

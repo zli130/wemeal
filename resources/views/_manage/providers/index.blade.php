@@ -21,7 +21,7 @@
                             <provider class="media">
                                 <figure class="media-left">
                                     <p class="image is-128x128">
-                                        <img src="{{asset('images/_providers/' . $provider->image)}}" alt="{{$provider->name}}">
+                                        <img src="{{asset('images/' . $provider->image)}}" alt="{{$provider->name}}">
                                     </p>
                                 </figure>
 
@@ -41,7 +41,10 @@
                                         </div>
                                         <div class="level-right">
                                             <div class="level-item">
-                                                <a class="button is-primary" href="{{route('providers.show', $provider->id)}}">View</a>
+                                                <a class="button is-primary is-outlined" href="{{route('providers.show', $provider->id)}}">View</a>
+                                            </div>
+                                            <div class="level-item">
+                                                <a class="button is-primary is-outlined" href="{{route('providers.edit', $provider->id)}}">Edit</a>
                                             </div>
                                         </div>
                                     </div>

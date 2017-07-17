@@ -12,3 +12,9 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     }
   }
 }
+
+.div-table {
+  div.columns.is-gapless {
+    margin: 0;
+  }
+}

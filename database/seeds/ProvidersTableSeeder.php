@@ -36,10 +36,10 @@ class ProvidersTableSeeder extends Seeder
 
                 'description' => $faker->paragraph(mt_rand(2,5)),
 
-                'image' => 'test_provider.png',
+                'image' => '_providers\/test_provider.png',
 
                 'active' => 1,
-                
+
                 'owner' => $faker->name,
 
                 'address' => $faker->address,
@@ -74,7 +74,7 @@ class ProvidersTableSeeder extends Seeder
 
                         'active' => 1,
 
-                        'image' => 'test_meal.png',
+                        'image' => '_meals\/test_meal.png',
 
                         'price' => '11.99',
                     ]);

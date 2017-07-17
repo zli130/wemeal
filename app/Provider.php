@@ -24,7 +24,7 @@ class Provider extends Model
         return $this->hasMany(Meal::class);
     }
 
-    public function caregories()
+    public function categories()
     {
         return $this->hasMany(Category::class);
     }

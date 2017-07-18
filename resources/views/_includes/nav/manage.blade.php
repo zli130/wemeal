@@ -1,6 +1,13 @@
 
 <div class="side-menu p-l-10">
   <aside class="menu m-t-30">
+      <ul class="menu-list">
+        <li>
+            <a class="nav-item is-paddingless" href="{{route('manage.dashboard')}}">
+              <img src="{{asset('images/_webs/wemeal-logo-sm.png')}}" alt="WeMeal">
+            </a>
+        </li>
+      </ul>
     <p class="menu-label">
       General
     </p>

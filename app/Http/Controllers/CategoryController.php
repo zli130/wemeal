@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Category;
+
 class CategoryController extends Controller
 {
     /**
@@ -13,7 +15,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        // $category = Category::findOrFail($id);
+        // return view('_manage.categories.index');
     }
 
     /**
@@ -45,7 +48,8 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        //
+        $category = Category::with('provider')->findOrFail($id);
+        return view('_manage.categories.show')->withCategory($category);
     }
 
     /**

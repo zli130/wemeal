@@ -34,6 +34,7 @@ class ProviderController extends Controller
             'address' => 'required|max:255',
             'phone' => 'required|max:50',
             'owner' => 'required|max:255',
+            'image'=> 'image|mimes:jpeg,png,jpg,gif,svg|max:1024',
         ]);
 
         $provider = new Provider;
@@ -90,6 +91,7 @@ class ProviderController extends Controller
             'address' => 'required|max:255',
             'phone' => 'required|max:50',
             'owner' => 'required|max:255',
+            'image'=> 'image|mimes:jpeg,png,jpg,gif,svg|max:1024',
         ]);
 
         $provider = Provider::findOrFail($id);
@@ -119,7 +121,6 @@ class ProviderController extends Controller
         } else {
             return redirect()->back();
         }
-
     }
 
     public function destroy($id)

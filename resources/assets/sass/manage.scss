@@ -8,11 +8,14 @@
 
 .management-area {
   position: absolute;
-  top: 4rem;
   left: 200px;
   right: 0;
 }
 
 .flex-container {
   margin: 25px 25px;
+}
+
+.manage-nav {
+    height: 3.0rem !important;
 }

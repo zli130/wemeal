@@ -44,7 +44,7 @@
                             <div class="card-header">
                                 <p class="card-header-title">{{$category->name}}</p>
                                 <span class="card-header-icon">
-                                    <a href="#" class="button is-primary">Edit</a>
+                                    <a href="{{route('categories.show', $category->id)}}" class="button is-primary">Edit</a>
                                 </span>
                             </div>
 
@@ -79,6 +79,7 @@
                                             <div class="column is-1">${{$meal->price}}</div>
                                             <div class="column is-2">
                                                 <a class="button is-primary is-outlined" href="{{route('meals.show', $meal->id)}}">View</a>
+                                                <a class="button is-primary is-outlined" href="{{route('meals.edit', $meal->id)}}">Edit</a>
                                             </div>
                                         </div>
                                     @endforeach

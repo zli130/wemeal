@@ -13,12 +13,11 @@
 </head>
 <body>
 
-    @include('_includes.nav.main')
-
     @include('_includes.nav.manage')
 
     <div class="management-area" id="app">
-      @yield('content')
+        @include('_includes.nav.manage_main')
+        @yield('content')
     </div>
 
     <!-- Scripts -->

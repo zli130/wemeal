@@ -14,7 +14,12 @@
     <ul class="menu-list">
       <li><a href="{{route('manage.dashboard')}}">Dashboard</a></li>
     </ul>
-
+    <p class="menu-label">
+      Promotions
+    </p>
+    <ul class="menu-list">
+      <li><a href="{{route('promotions.index')}}">Promotions</a></li>
+    </ul>
     <p class="menu-label">
       Administration
     </p>

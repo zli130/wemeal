@@ -74,9 +74,9 @@ class MealController extends Controller
 
         if ($meal->save()) {
             return redirect()->route('meals.show', $meal->id);
-        } else {
-            return redirect()->back();
         }
+
+        return redirect()->back();
     }
 
     /**
@@ -140,9 +140,9 @@ class MealController extends Controller
 
         if ($meal->save()) {
             return redirect()->route('meals.show', $meal->id);
-        } else {
-            return redirect()->back();
         }
+
+        return redirect()->back();
     }
 
     /**

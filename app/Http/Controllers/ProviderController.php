@@ -64,9 +64,9 @@ class ProviderController extends Controller
 
         if ($provider->save()) {
             return redirect()->route('providers.show', $provider->id);
-        } else {
-            return redirect()->back();
         }
+
+        return redirect()->back();
     }
 
     public function show($id)
@@ -118,9 +118,9 @@ class ProviderController extends Controller
 
         if ($provider->save()) {
             return redirect()->route('providers.show', $provider->id);
-        } else {
-            return redirect()->back();
         }
+        
+        return redirect()->back();
     }
 
     public function destroy($id)

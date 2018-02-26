@@ -133,7 +133,7 @@ class UserController extends Controller
             Session::flash('success', 'Great,you have successfully updated user account!');
             return redirect()->route('users.show', $user->id);
         } else {
-            Session::flash('danner', 'Sorry, a problem occurred while updateing user account!');
+            Session::flash('danner', 'Sorry, a problem occurred while updating user account!');
         }
 
         return redirect()->back();

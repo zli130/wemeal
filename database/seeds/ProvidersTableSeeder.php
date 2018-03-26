@@ -10,6 +10,8 @@ use App\Meal;
 
 use App\Category;
 
+use App\Promotion;
+
 class ProvidersTableSeeder extends Seeder
 {
     /**
@@ -26,6 +28,8 @@ class ProvidersTableSeeder extends Seeder
         Category::truncate();
 
         Meal::truncate();
+
+        Promotion::truncate();
 
         foreach (range(1,20) as $i) {
             $provider = Provider::create([
@@ -49,6 +53,26 @@ class ProvidersTableSeeder extends Seeder
                 'weekday' => mt_rand(0,6),
 
             ]);
+
+            foreach(range(1, mt_rand(1,4)) as $p) {
+                $promotion = Promotion::create([
+                    'user_id' => mt_rand(1,2),
+
+                    'provider_id' => $provider->id,
+
+                    'name' => $faker->word,
+
+                    'description' => $faker->paragraph(mt_rand(1,2)),
+
+                    'token' => $faker->word,
+
+                    'start_at' => '2018-03-01 23:59:59',
+
+                    'end_at' => '2018-04-01 23:59:59',
+
+                    'status' => $faker->word,
+                ]);
+            }
 
             foreach (range(1, mt_rand(3,12)) as $j) {
                 $category = Category::create([

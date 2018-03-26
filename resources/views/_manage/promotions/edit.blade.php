@@ -8,7 +8,7 @@
                 <h1 class="title">Edit Provider</h1>
             </div>
             <div class="column">
-                <a href="{{route('providers.index')}}" class="button is-primary">Back to Provider List</a>
+                <a href="{{route('promotions.index')}}" class="button is-primary">Back to Provider List</a>
             </div>
         </div>
 
@@ -19,7 +19,7 @@
                     <div class="card-content">
                         <h3>Provider Details</h3>
                         <hr>
-                        <form role="form" action="{{route('providers.update', $provider->id)}}" method="post" enctype="multipart/form-data">
+                        <form role="form" action="{{route('promotions.update', $provider->id)}}" method="post" enctype="multipart/form-data">
                             {{method_field('PUT')}}
                             {{csrf_field()}}
 

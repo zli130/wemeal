@@ -8,6 +8,7 @@ use App\Promotion;
 
 use App\Provider;
 
+
 class PromotionController extends Controller
 {
     /**

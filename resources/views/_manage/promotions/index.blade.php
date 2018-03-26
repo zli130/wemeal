@@ -19,10 +19,10 @@
                         @if(count($promotions) > 0)
                             <div class="div-table">
                                 <div class="columns m-t-5">
-                                    <div class="column is-1">&nbsp;</div>
                                     <div class="column is-2">Name</div>
                                     <div class="column is-6">Description</div>
-                                    <div class="column is-1">Price</div>
+                                    <div class="column is-1">Starts</div>
+                                    <div class="column is-2">Ends</div>
                                     <div class="column is-2">Actions</div>
                                 </div>
                                 @foreach ($promotions as $promotion)
@@ -34,17 +34,17 @@
                                         </div>
                                         <div class="column is-4">
                                             <p>
-                                                <small>{{$promotion->start_at->toDateTimeString()}}</small>
+                                                <small>{{$promotion->description}}</small>
+                                            </p>
+                                        </div>
+                                        <div class="column is-2">
+                                            <p>                                             
+                                                <small>{{$promotion->start_at}}</small>
                                             </p>
                                         </div>
                                         <div class="column is-2">
                                             <p>
-                                                <small>{{$promotion->end_at->toDateTimeString()}}</small>
-                                            </p>
-                                        </div>
-                                        <div class="column is-2">
-                                            <p>
-                                                <small>{{$promotion->created_at->toDateTimeString()}}</small>
+                                                <small>{{$promotion->end_at}}</small>
                                             </p>
                                         </div>
                                         <div class="column is-2">

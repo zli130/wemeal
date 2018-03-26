@@ -50,7 +50,7 @@
                                     <div class="column is-2">Actions</div>
                                 </div>
                                 @foreach ($category->meals as $meal)
-                                    <div class="columns is-gapless">
+                                    <div class="columns is-gapless columns m-t-10">
                                         <div class="column is-1">
                                             <a class="image is-64x64" href="{{route('meals.show', $meal->id)}}">
                                                 <img src="{{asset('images/' . $meal->image)}}" alt="{{$meal->name}}">

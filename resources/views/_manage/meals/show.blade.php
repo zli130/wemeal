@@ -21,26 +21,6 @@
                                 </figure>
                             </div>
                             <div class="column">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <figure class="image is-128x128">
-                                            <a href="{{route('providers.show', $meal->provider->id)}}">
-                                                <img src="{{asset('images/' . $meal->provider->image)}}" alt="{{$meal->provider->name}}">
-                                            </a>
-                                        </figure>
-                                    </div>
-                                    <div class="media-content">
-                                        <p class="title">{{$meal->name}}</p>
-                                        <p class="subtitle is-6">
-                                            <nav class="breadcrumb">
-                                                <ul>
-                                                    <li><a href="{{route('providers.show', $meal->provider->id)}}">{{$meal->provider->name}}</a></li>
-                                                    <li><a href="{{route('categories.show', $meal->category->id)}}">{{$meal->category->name}}</a></li>
-                                                </ul>
-                                            </nav>
-                                        </p>
-                                    </div>
-                                </div>
                                 <div class="content">
                                     <p>{{$meal->description}}</p>
                                     <hr>

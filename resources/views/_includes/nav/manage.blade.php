@@ -1,10 +1,9 @@
-
 <div class="side-menu p-l-10">
-  <aside class="menu m-t-30">
+  <aside class="menu">
       <ul class="menu-list">
         <li>
             <a class="nav-item is-paddingless" href="{{route('manage.dashboard')}}">
-              <img src="{{asset('images/_webs/wemeal-logo-sm.png')}}" alt="WeMeal">
+              <img src="{{asset('images/_webs/wemeal-logo.png')}}" alt="WeMeal">
             </a>
         </li>
       </ul>
@@ -33,6 +32,12 @@
     </p>
     <ul class="menu-list">
         <li><a href="{{route('providers.index')}}">Manage Providers</a></li>
+    </ul>
+    <p class="menu-label">
+      Home page
+    </p>
+    <ul class="menu-list">
+        <li><a href="{{route('home')}}">Home page</a></li>
     </ul>
   </aside>
 </div>

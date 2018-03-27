@@ -8,7 +8,7 @@
             v-on:placechanged="getAddressData"
             country="nz"
         >
-    </vue-google-auto-complete>
+        </vue-google-auto-complete>
     </p>
 </template>
 <script>

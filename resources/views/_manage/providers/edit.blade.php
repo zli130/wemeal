@@ -55,9 +55,7 @@
 
                             <div class="field">
                                 <label for="address" class="label">Address</label>
-                                <p class="control">
-                                    <input class="input{{$errors->has('address') ? ' is-danger' : ''}}" type="text" name="address" value="{{old('address') ? old('address') : $provider->address}}" autocomplete="off" required>
-                                </p>
+                                <auto-address></auto-address>
                                 @if($errors->has('address'))
                                     <p class="help is-danger">{{$errors->first('address')}}</p>
                                 @endif

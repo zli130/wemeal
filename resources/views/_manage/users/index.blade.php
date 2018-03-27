@@ -15,7 +15,7 @@
         <hr>
         <div class="card">
             <div class="card-content">
-                <table class="table is-narrow">
+                <table class="table">
                     <thead>
                         <tr>
                             <th>#</th>

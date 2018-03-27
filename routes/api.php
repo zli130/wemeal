@@ -2,12 +2,7 @@
 
 use Illuminate\Http\Request;
 
-// Route::middleware('auth:api')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
 
-Route::prefix('_api')->middleware('auth:api')->group(function(){
-    Route::resource('/users', 'UserController');
+Route::prefix('user')->group(function(){
+    Route::get('/all', 'UserController@userApi');
 });
-
-

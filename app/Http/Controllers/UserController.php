@@ -149,4 +149,11 @@ class UserController extends Controller
     {
         //
     }
+
+    // a sample of simulating API
+    public function userApi()
+    {
+        $users = User::orderBy('id', 'desc')->paginate(10);
+        return response()->json(['users' => $users]);
+    }
 }
